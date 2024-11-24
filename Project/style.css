@@ -4,19 +4,57 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
-img{
+/* Хэдер */
+header {
+    background-color: #251919;
+    padding: 10px 20px;
+    display: flex; /* Используем flexbox для хедера */
+    justify-content: space-between; /* Размещаем элементы на противоположных концах */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    color: wheat;
+    height: 60px; /* Высота хедера */
+}
+
+/* Логотип */
+header h1 {
+    font-size: 2em;
+    color: wheat;
+    margin: 0;
+}
+
+/* Меню */
+.nav-desktop ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Меню в строку */
+}
+
+.nav-desktop ul li {
+    margin-left: 20px; 
+}
+
+.nav-desktop ul li a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+img {
     width: 300px;
     height: 200px;
 }
+
 /* Заголовок страницы */
 h1 {
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
     font-size: 2em;
     color: wheat;
-    font:bolder;
+    font-weight: bold;
 }
 
 /* Стили секций */
@@ -41,7 +79,7 @@ h1 {
 
 .section-content {
     margin-top: 40px;
-    color:wheat;
+    color: wheat;
 }
 
 /* Desktop: три секции в ряд */
